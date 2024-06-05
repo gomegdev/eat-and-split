@@ -40,7 +40,6 @@ function App() {
   };
 
   const handleSelection = (friend) => {
-    // setSelectedFriend(friend);
     setSelectedFriend((cur) => (cur?.id === friend.id ? null : friend));
     setShowAddFriend(false);
   };
@@ -58,7 +57,7 @@ function App() {
 
   return (
     <div
-      className="grid min-h-screen bg-gradient-to-r
+      className="grid min-h-screen bg-gradient-to-br
      from-purple-500 to-pink-500 pt-20"
     >
       <div className="container mx-auto grid grid-cols-2 gap-8">
